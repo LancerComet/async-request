@@ -1,0 +1,11 @@
+.coverage-report/
+.rpt2_cache
+preview/
+test/
+.editorconfig
+.gitignore
+.gitlab-ci.yml
+.package-lock.json
+rollup.config.js
+tsconfig.json
+tslint.json

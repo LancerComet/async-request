@@ -1,0 +1,53 @@
+{
+  "name": "@lancercomet/async-request",
+  "version": "0.1.0",
+  "description": "Handle XHR in decoration way.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js",
+    "test": "jest --coverage",
+    "pretest": "npm run build",
+    "preversion": "npm run test"
+  },
+  "author": {
+    "name": "LancerComet",
+    "email": "chw644@hotmail.com"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "axios-mock-adapter": "^1.16.0",
+    "jest": "^23.4.0",
+    "rollup": "^0.62.0",
+    "rollup-plugin-typescript2": "^0.15.1",
+    "ts-jest": "^23.10.5",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.(j|t)s?(x)",
+      "**/?(*.)+(spec|test).(j|t)s?(x)"
+    ],
+    "coverageDirectory": "<rootDir>/.coverage-report",
+    "moduleNameMapper": {
+      "@lancercomet/async-request": "<rootDir>/dist/index.js",
+      "../lib": "<rootDir>/dist/index.js"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
