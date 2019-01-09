@@ -91,6 +91,6 @@ export default class UserPanel extends AppComponent {
 
 ## API
 
-```typescript
+To be added.
 
-```
+Please check `index.d.ts` for now.

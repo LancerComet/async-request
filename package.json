@@ -1,7 +1,7 @@
 {
   "name": "@lancercomet/async-request",
   "version": "0.1.0",
-  "description": "Handle XHR in decoration way.",
+  "description": "Make http requests by using axios in the @Decorator way.",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
   "types": "./index.d.ts",
